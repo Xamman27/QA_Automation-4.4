@@ -8,7 +8,7 @@ def test_greeting():
     name = "Анна"
     age = 25
     # TODO Сформируйте нужную строку
-    output = "Привет, " + name + '! Тебе ' + str(age) + ' лет.'
+    output = "Привет, {}! Тебе  {}' лет.".format(name, age)
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
 
