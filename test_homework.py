@@ -8,7 +8,7 @@ def test_greeting():
     name = "Анна"
     age = 25
     # TODO Сформируйте нужную строку
-    output = "Привет, {}! Тебе  {}' лет.".format(name, age)
+    output = 'Привет, {}! Тебе {} лет.'.format(name, age)
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
 
@@ -52,9 +52,7 @@ def test_random_list():
 
     # TODO создайте список
     l = []
-    for i in range(10):
-        l.append(random.randint(0,100))
-    l = sorted(l)
+    l = sorted([random.randint(0, 100) for i in range(10)])
     assert len(l) == 10
     assert l[0] < l[-1]
 
